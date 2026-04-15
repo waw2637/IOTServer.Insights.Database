@@ -47,6 +47,9 @@ The database is a first-class platform component, not just an implementation det
 - `docs/QUERY_CATALOG_SPEC.md` - query documentation and drift-control rules
 - `docs/SCHEMA_CHANGE_REVIEW_CHECKLIST.md` - required schema review checklist
 - `CODING_PRACTICES.md` - repo-local coding and operational quality requirements
+- `docs/LOGGING_STRATEGY.md` - repo logging expectations
+- `docs/DATA_ACCESS_STRATEGY.md` - repo data-access boundaries and patterns
+- `docs/ERROR_HANDLING_STRATEGY.md` - repo error-handling and recovery expectations
 
 ## Notes
 
