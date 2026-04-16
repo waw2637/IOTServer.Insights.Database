@@ -33,6 +33,12 @@ Boundary decision: proceed to next stage with governance scope constrained to ap
 3. **Cross-repo usage boundary confirmed**
    - Other repos must reference this repo for schema changes, migrations, index/retention changes, and important query updates.
 
+4. **Data ownership, protection, and historical continuity boundary confirmed**
+   - Model registry entries must explicitly identify horizon-required data ownership boundaries (what must be retained in this repo-governed data model).
+   - Governance scope includes documenting controls to avoid customer-detail leakage in schema/query artifacts (for example, restricted fields, minimization, and approved identifier usage).
+   - Governance scope includes documenting permission boundaries for sensitive model/query access (who can read, propose changes, and approve).
+   - Historical-data interoperability must preserve GUID-based lineage while allowing friendly-tag references via governed mapping so tag/connection changes do not orphan historical records.
+
 ## Dependency and Sequencing Notes
 
 ### Dependencies satisfied for this stage
@@ -54,6 +60,9 @@ Boundary decision: proceed to next stage with governance scope constrained to ap
 - Define a lightweight governance checklist template for PRs touching schema or important queries.
 - Propose drift-detection guardrails (for example, required metadata completeness checks) for future planning review.
 - Propose ownership and review rotation metadata requirements for model/query records.
+- Propose a sensitive-data classification and redaction convention for model and query metadata to reduce customer-detail leakage risk.
+- Propose access-control metadata requirements (read/propose/approve roles) for governed schema and important query artifacts.
+- Propose GUID-to-friendly-tag mapping governance for historical interoperability, including non-orphaning requirements across PLC tag and connection changes.
 
 These are proposals only and are intentionally not converted into execution-ready tasks in this stage.
 
