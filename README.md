@@ -46,6 +46,7 @@ The database is a first-class platform component, not just an implementation det
 - `docs/MODEL_REGISTRY_SPEC.md` - approved model registry rules
 - `docs/QUERY_CATALOG_SPEC.md` - query documentation and drift-control rules
 - `docs/SCHEMA_CHANGE_REVIEW_CHECKLIST.md` - required schema review checklist
+- `docs/BOUNDARY_SPEC_SCHEMA_REGISTRY_QUERY_CATALOG_GOVERNANCE.md` - boundary specification outputs and follow-on proposals for schema/query governance
 - `CODING_PRACTICES.md` - repo-local coding and operational quality requirements
 - `docs/LOGGING_STRATEGY.md` - repo logging expectations
 - `docs/DATA_ACCESS_STRATEGY.md` - repo data-access boundaries and patterns
